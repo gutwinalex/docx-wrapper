@@ -2,19 +2,19 @@
 
 This script will make your life easier when you try to create reports or other documents in the docx format. It uses the python-docx library in the background which needs to be installed prior. 
 
-'''
+```
 pip install python-docx
-'''
+```
 
 If you keep the script in the same folder where your script will be located you will need to import it as: 
 
-'''
+```
 import docx
-'''
+```
 
 ## Example
 
-'''
+```
 
 doc = docx.create_document('template.docx', templates\\head.png')
 doc = docx.add_title(doc, 'Report')
@@ -31,4 +31,4 @@ doc = docx.pagebreak(doc)
 
 docx.save_docx(doc, 'document.docx')
 
-'''
+```
